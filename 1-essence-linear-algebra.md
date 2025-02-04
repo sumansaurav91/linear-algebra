@@ -26,4 +26,39 @@
 ## Span
 * **Definition**: The "span" of a set of vectors is the collection of all vectors that can be created by taking linear combinations of those vectors; essentially, it's the set of all possible vectors you can reach by adding scaled versions of the original vectors together. 
 
+## Interesting Scenario
+
+```
+Let's start with the first definition:
+
+Vectors v̄, w̄, ū are linearly independent if av̄ + bw̄ + cū = 0̄ has only the trivial solution a = b = c = 0
+
+
+* Let's show this implies the second definition:
+  - If we rearrange av̄ + bw̄ + cū = 0̄ to ū = (-a/c)v̄ + (-b/c)w̄
+  - The only solution being a = b = c = 0 means we can't find any non-zero scalars that make this equation work
+  - Therefore ū cannot be written as any linear combination av̄ + bw̄
+  - This is exactly what the second definition states
+
+* Now let's show the second definition implies the first:
+  - If ū ≠ av̄ + bw̄ for any scalars a and b
+  - Then av̄ + bw̄ + cū = 0̄ can only be satisfied when c = 0 (otherwise we could solve for ū)
+  - But with c = 0, we get av̄ + bw̄ = 0̄
+  - By the same logic applied to v̄ and w̄, this requires a = b = 0
+  - Therefore we get a = b = c = 0 as the only solution
+
+So both definitions are equivalent ways of saying the same thing: no vector can be written as a linear combination of the others.
+The first definition treats all vectors symmetrically while the second highlights one vector's relationship to the others, but they express the same fundamental concept of linear independence.
+```
+
+## More Simpler Explaination
+
+```
+* The second definition (ū ≠ av̄ + bw̄) is basically saying "you can't get to ū by mixing v̄ and w̄ together in any way."
+* It's like saying "you can't make orange by mixing only blue and green."
+* The first definition (av̄ + bw̄ + cū = 0̄ only when a = b = c = 0) is just a more formal, mathematical way of saying the same thing.
+* Because if you could make ū from v̄ and w̄, you could rearrange the equation to get zero, which would break the rule.
+* Think of it like this: if you could get to ū using v̄ and w̄, it would be like having a recipe that says "2 parts v̄ plus 3 parts w̄ equals ū".
+* The first definition is just saying no such recipe exists!
+```
 ## Matrices as Linear Transformation
